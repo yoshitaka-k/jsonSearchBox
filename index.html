@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+<head>
+  <title>Material Components for the web</title>
+  <link rel="stylesheet" href="./css/jQuery.jsonSearchBox.css">
+</head>
+<body>
+  <input type="text" id="demo-input">
+
+  <script src="./js/jquery-3.2.1.slim.min.js"></script>
+  <script src="./js/jQuery.jsonSearchBox.js" type="text/javascript" charset="utf-8" async></script>
+  <script type="text/javascript" charset="utf-8">
+    $(function(){
+      $('#demo-input').jsonSearchBox({
+        json: $.parseJSON('{"a":"b","c":"d","e":"f"}'),
+        searching: false
+      });
+    });
+  </script>
+</body>
+</html>

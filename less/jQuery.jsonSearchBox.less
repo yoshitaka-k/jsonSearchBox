@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+@import "less/_mixin.less";
+
+.pop.json_search_box{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 190px;
+  min-width: 140px;
+  height: 160px;
+  padding: 2px 0;
+  background-color: #ffffff;
+  border: solid 1px #c8c8c8;
+  overflow-y: scroll;
+  z-index: 1;
+  .box-shadow(1px 1px 5px rgba(0,0,0,.1));
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{width: 100%}
+    a{
+      display: block;
+      padding: 4px 8px;
+      font-size: 11px;
+      color: #444;
+      text-decoration: none;
+      cursor: default;
+      &:hover{background-color: #e8e8e8}
+    }
+  }
+}
